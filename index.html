@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Lista 1, Ex. 5: codificação de caracteres. UTF-8 mostra os acentos do português corretamente -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Júlia Rocha | Desenvolvedora e pesquisadora em IA</title>
+
+  <!-- Lista 1, Ex. 6: a descrição que buscadores como o Google podem mostrar nos resultados -->
+  <meta name="description" content="Portfólio de Júlia Rocha, estudante de Ciência da Computação na UNIFAL-MG. Projetos em Inteligência Artificial, educação em tecnologia e o programa Elos Code.">
+  <meta name="author" content="Júlia Rocha">
+
+  <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+
+  <!-- Fontes do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <!-- Lista 1, Ex. 7: aplicando CSS e JavaScript à página -->
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <a class="marca" href="index.html">Júlia Rocha</a>
+
+      <!-- Lista 2, Ex. 8: menu de navegação (lista de links repetida em todas as páginas) -->
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="experiencia.html">Experiência</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="elos-code.html">Elos Code</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="botao-tema" id="botao-tema" type="button">Modo escuro</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Lista 2, Ex. 9 (Links 2): link para um trecho da mesma página usando id -->
+    <p><a href="#contato-rapido">Ir direto para os contatos no fim da página</a></p>
+
+    <!-- Lista 1, Ex. 3: documento com título h1, texto em destaque, link e imagem -->
+    <section class="hero">
+      <div>
+        <p class="rotulo">Desenvolvedora · Pesquisadora em IA · Educadora</p>
+        <h1>Júlia Rocha</h1>
+
+        <!-- Lista 1, Ex. 1: primeiro elemento HTML. Um parágrafo com uma palavra em ênfase -->
+        <p class="frase">Construindo tecnologia que <em>fecha</em> lacunas, não que cria novas.</p>
+
+        <p class="subtitulo">Empoderando comunidades com tecnologia consciente e design inclusivo.</p>
+
+        <!-- Lista 1, Ex. 2: atributos em um elemento (href e title) -->
+        <p>
+          <a href="elos-code.html" title="Programa de extensão da UNIFAL-MG que ensina IA para meninas de escolas públicas">Conheça o Elos Code</a>
+          ou
+          <a href="projetos.html" title="Estudos de caso: problema, abordagem e resultados">veja meus projetos</a>.
+        </p>
+      </div>
+
+      <img src="imagens/perfil.jpeg" alt="Foto de Júlia Rocha sorrindo" width="800" height="800">
+    </section>
+
+    <!-- Lista 2, Ex. 1: dando estrutura ao conteúdo com h2 e parágrafos -->
+    <section aria-labelledby="sobre">
+      <p class="rotulo">Sobre mim</p>
+      <h2 id="sobre">A pessoa por trás do código</h2>
+
+      <div class="texto-longo">
+        <!-- Lista 2, Ex. 5: "Let's be important". strong para importância, em para ênfase -->
+        <p>
+          Sou estudante de <strong>Ciência da Computação na UNIFAL-MG</strong>.
+          Acredito em uma ideia simples: a tecnologia deve ser <em>uma ponte, não uma barreira</em>.
+        </p>
+        <p>
+          Meu foco é <strong>Inteligência Artificial</strong>. Não só como área técnica, mas como ferramenta para mudar
+          como aprendemos, trabalhamos e nos conectamos.
+        </p>
+        <p>
+          Pelo <a href="elos-code.html">Elos Code</a>, ensino IA e Ciência da Computação para estudantes do ensino médio.
+          Quero formar a <em>próxima</em> geração de criadoras digitais.
+        </p>
+        <p>
+          Fora da IDE, exploro o encontro entre design e engenharia. Também lidero as equipes de Conteúdo e Tecnologia
+          da Olimpíada Brasileira de Geografia. Procuro sempre deixar o mundo digital <strong>mais humano e mais inclusivo</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Lista 2, Ex. 2: lista não ordenada (a ordem dos itens não importa) -->
+    <section aria-labelledby="areas">
+      <p class="rotulo">Áreas</p>
+      <h2 id="areas">Onde eu trabalho</h2>
+      <ul class="etiquetas">
+        <li>Engenharia de IA</li>
+        <li>Desenvolvimento full stack</li>
+        <li>Educação em tecnologia</li>
+        <li>Aprendizado de máquina</li>
+        <li>Impacto social</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="destaques">
+      <p class="rotulo">Destaques</p>
+      <h2 id="destaques">Não apenas projetos, soluções</h2>
+      <div class="texto-longo">
+        <p>
+          O <a href="projetos.html#bgo">chatbot BGO</a> responde dúvidas de Geografia usando só fontes oficiais da Olimpíada.
+          Assim ele não inventa respostas.
+        </p>
+        <p>
+          A <a href="experiencia.html">página de experiência</a> mostra as comunidades e laboratórios que moldaram meu caminho.
+        </p>
+        <!-- Lista 2, Ex. 7: meu próprio link de exemplo, para um site externo, com title -->
+        <p>
+          Aprendi HTML com os guias da
+          <a href="https://developer.mozilla.org/pt-BR/docs/Learn" title="Guias gratuitos de desenvolvimento web da Mozilla">MDN Web Docs</a>.
+        </p>
+      </div>
+    </section>
+
+    <section id="contato-rapido" aria-labelledby="titulo-contato">
+      <p class="rotulo">Vamos conectar</p>
+      <h2 id="titulo-contato">Vamos construir algo juntos</h2>
+      <p>Estou aberta a colaborações, conversas sobre pesquisa e ideias novas.</p>
+      <p><a href="contato.html">Veja todas as formas de falar comigo</a></p>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>© <span id="ano">2026</span> Júlia Rocha. Vamos construir algo significativo.</p>
+      <p>
+        <a href="extras/glossario.html">Glossário</a> ·
+        <a href="exercicios.html">Roteiro dos exercícios</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

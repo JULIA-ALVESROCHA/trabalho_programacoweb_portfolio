@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roteiro dos exercícios | Júlia Rocha</title>
+  <meta name="description" content="Mapa dos exercícios de HTML da MDN resolvidos no portfólio de Júlia Rocha, com o local de cada um e as respostas dos exercícios de observação.">
+  <meta name="author" content="Júlia Rocha">
+  <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <a class="marca" href="index.html">Júlia Rocha</a>
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="experiencia.html">Experiência</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="elos-code.html">Elos Code</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="botao-tema" id="botao-tema" type="button">Modo escuro</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <p class="rotulo">Entrega da disciplina</p>
+      <h1>Roteiro dos exercícios</h1>
+      <p class="subtitulo">
+        Resolvi os exercícios da MDN usando o meu próprio portfólio como conteúdo.
+        A tabela mostra onde cada um está. No código, cada trecho tem um comentário com o número do exercício.
+      </p>
+    </section>
+
+    <section aria-labelledby="lista1">
+      <h2 id="lista1">Lista 1: Introdução à HTML</h2>
+      <div class="tabela-rolagem">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Nº</th>
+              <th scope="col">Exercício</th>
+              <th scope="col">Onde está</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Creating your first HTML element</td>
+              <td><a href="index.html">Início</a>: parágrafo com a palavra "fecha" dentro de <code>&lt;em&gt;</code>.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Adding attributes to an element</td>
+              <td><a href="index.html">Início</a>: links com <code>href</code> e <code>title</code>. Em <a href="contato.html">Contato</a>, também <code>target</code> e <code>rel</code>.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Adding some features to an HTML document</td>
+              <td><a href="index.html">Início</a>: título <code>&lt;h1&gt;</code>, palavras em <code>&lt;strong&gt;</code>, link e imagem com <code>alt</code>.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Inspecting a single element</td>
+              <td><a href="#inspecionar">Resposta abaixo</a>.</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Experiment with character encoding</td>
+              <td><code>&lt;meta charset="utf-8"&gt;</code> em todas as páginas e o <a href="extras/teste-encoding.html">teste com a codificação errada</a>. <a href="#encoding">Resposta abaixo</a>.</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>The description's use in search engines</td>
+              <td><code>&lt;meta name="description"&gt;</code> diferente em cada página. <a href="#descricao">Resposta abaixo</a>.</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Applying CSS and JavaScript to a page</td>
+              <td><code>css/estilo.css</code> com <code>&lt;link&gt;</code> e <code>js/script.js</code> com <code>&lt;script defer&gt;</code>. O script coloca o ano no rodapé e liga o botão de modo escuro.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="lista2">
+      <h2 id="lista2">Lista 2: Elementos de texto</h2>
+      <div class="tabela-rolagem">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Nº</th>
+              <th scope="col">Exercício</th>
+              <th scope="col">Onde está</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Giving our content structure</td>
+              <td><a href="index.html#sobre">Sobre mim</a> e <a href="experiencia.html">Experiência</a>: títulos <code>h1</code>, <code>h2</code> e parágrafos.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Marking up an unordered list</td>
+              <td><a href="index.html#areas">Áreas</a>, <a href="experiencia.html#stack">stack</a> e ingredientes em <a href="elos-code.html#receita">Elos Code</a>.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Marking up an ordered list</td>
+              <td>Modo de preparo em <a href="elos-code.html#receita">Elos Code</a>.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Marking up our recipe page</td>
+              <td><a href="elos-code.html#receita">A receita do Elos Code</a>: títulos, lista de ingredientes, passos numerados e listas aninhadas.</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Let's be important!</td>
+              <td><a href="index.html#sobre">Sobre mim</a> e <a href="elos-code.html#importa">Por que isso importa</a>: <code>&lt;strong&gt;</code> e <code>&lt;em&gt;</code>.</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Test your skills: HTML text basics</td>
+              <td>
+                Tarefa 1 (títulos e parágrafos): <a href="projetos.html">Projetos</a>.
+                Tarefa 2 (<code>ul</code> e <code>ol</code>): <a href="elos-code.html#receita">Elos Code</a>.
+                Tarefa 3 (<code>dl</code>): <a href="extras/glossario.html">Glossário</a>.
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Creating your own example link</td>
+              <td><a href="index.html#destaques">Destaques</a>: link para a MDN com <code>title</code>.</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Creating a navigation menu</td>
+              <td>Menu <code>&lt;nav&gt;</code> no topo de todas as páginas, com a página atual marcada.</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Test your skills: Links</td>
+              <td>
+                Tarefa 1 (link com <code>title</code> e <code>mailto</code> com assunto): <a href="contato.html">Contato</a>.
+                Tarefa 2 (subpasta, <code>../</code>, link absoluto e link para <code>id</code>):
+                <a href="projetos.html#bgo">Projetos</a>, <a href="extras/glossario.html">Glossário</a> e o primeiro link do <a href="index.html">Início</a>.
+                Tarefa 3 (texto de link claro e aviso de PDF): <a href="contato.html">Contato</a>.
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Marking up a set of definitions</td>
+              <td><a href="extras/glossario.html">Glossário</a> e os números em <a href="elos-code.html">Elos Code</a>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="lista3">
+      <h2 id="lista3">Lista 3: WooCommerce</h2>
+      <div class="texto-longo">
+        <p>
+          Criei um site WordPress no WordPress Playground, instalei o plugin WooCommerce, analisei as páginas que ele gerou
+          (Loja, Carrinho, Finalizar compra e Minha conta) e criei o primeiro produto.
+        </p>
+        <p>
+          <a href="https://playground.wordpress.net/?mode=seamless#{%22landingPage%22:%22/wp-admin/%22,%22login%22:true,%22plugins%22:[%22woocommerce%22]}" target="_blank" rel="noopener" title="Abre o WordPress com o WooCommerce instalado no WordPress Playground">Abrir o WordPress com WooCommerce no Playground</a>
+          (abre em uma nova aba)
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="respostas">
+      <h2 id="respostas">Respostas dos exercícios de observação</h2>
+
+      <div class="texto-longo">
+        <h3 id="inspecionar">Lista 1, Ex. 4: inspecionando um elemento</h3>
+        <p>
+          Abri a página inicial, cliquei com o botão direito no meu nome e escolhi <strong>Inspecionar</strong> (ou F12).
+          O DevTools mostrou o elemento <code>&lt;h1&gt;Júlia Rocha&lt;/h1&gt;</code> e o CSS aplicado a ele.
+        </p>
+        <p>
+          Comparei com o <code>&lt;title&gt;</code> dentro do <code>&lt;head&gt;</code>. O <code>&lt;h1&gt;</code> aparece
+          <em>dentro</em> da página. O <code>&lt;title&gt;</code> aparece na aba do navegador, nos favoritos e nos resultados de busca.
+        </p>
+
+        <h3 id="encoding">Lista 1, Ex. 5: codificação de caracteres</h3>
+        <p>
+          Todas as páginas usam <code>&lt;meta charset="utf-8"&gt;</code>, então os acentos do português aparecem certos.
+        </p>
+        <p>
+          No <a href="extras/teste-encoding.html">arquivo de teste</a>, troquei para <code>windows-1252</code>.
+          O arquivo continua salvo em UTF-8, então o navegador lê os bytes de outro jeito.
+          "Ciência" vira algo como "CiÃªncia". Voltando para UTF-8, o texto fica normal de novo.
+        </p>
+
+        <h3 id="descricao">Lista 1, Ex. 6: a descrição nos buscadores</h3>
+        <p>
+          Cada página tem uma <code>&lt;meta name="description"&gt;</code> própria.
+          Buscadores como o Google podem mostrar esse texto embaixo do título no resultado da pesquisa.
+          Por isso a descrição deve ser curta, ter as palavras importantes e explicar o que a pessoa vai encontrar.
+        </p>
+        <p>
+          Para testar, pesquise "MDN Web Docs" no Google. O texto embaixo do link costuma ser o mesmo da meta description do site da MDN.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>© <span id="ano">2026</span> Júlia Rocha. Vamos construir algo significativo.</p>
+      <p>
+        <a href="extras/glossario.html">Glossário</a> ·
+        <a href="exercicios.html">Roteiro dos exercícios</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

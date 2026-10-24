@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos | Júlia Rocha</title>
+  <meta name="description" content="Estudos de caso de Júlia Rocha: o chatbot BGO, que usa RAG para responder sem alucinações, e a iniciativa Elos Code, que leva IA para meninas de escolas públicas.">
+  <meta name="author" content="Júlia Rocha">
+  <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <a class="marca" href="index.html">Júlia Rocha</a>
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="experiencia.html">Experiência</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="elos-code.html">Elos Code</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="botao-tema" id="botao-tema" type="button">Modo escuro</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <p class="rotulo">Estudos de caso</p>
+      <h1>Projetos</h1>
+      <p class="subtitulo">
+        Mergulhos em problemas reais. Cada projeto vai da identificação do problema até uma solução que funciona.
+      </p>
+    </section>
+
+    <!--
+      Lista 2, Ex. 6 (Text basics 1): h1 para o título da página,
+      h2 para cada projeto, h3 para as subseções e p para os textos
+    -->
+
+    <article class="cartao projeto" id="bgo">
+      <p class="rotulo">RAG · IA conversacional</p>
+      <h2>BGO: chatbot para a Geografia brasileira</h2>
+      <p class="status">IA confiável para a preparação de olimpíadas</p>
+
+      <figure>
+        <img src="imagens/projetos/bgo.jpg" alt="Rede de pontos azuis conectados, representando o sistema de recuperação de informação" width="768" height="512">
+        <figcaption>
+          <!-- Lista 2, Ex. 9 (Links 2): link para uma imagem em uma subpasta -->
+          <a href="imagens/projetos/bgo.jpg">Abrir a imagem do BGO em tamanho real</a>
+        </figcaption>
+      </figure>
+
+      <p>
+        Um chatbot baseado em RAG que dá respostas precisas e sempre ligadas a uma fonte.
+        O objetivo é eliminar alucinações de IA em contextos educacionais.
+      </p>
+
+      <h3>O problema</h3>
+      <p>
+        A IA oferece tutoria acessível. Mas modelos de uso geral muitas vezes <em>inventam</em> respostas.
+        Estudantes de regiões com menos recursos não tinham tutores humanos nem um apoio automático confiável.
+      </p>
+
+      <h3>Abordagem</h3>
+      <p>
+        Desenvolvi um assistente conversacional em Python com arquitetura de Geração Aumentada por Recuperação (RAG).
+        O modelo só pode responder com base nos <strong>materiais oficiais da Olimpíada</strong>.
+        Isso bloqueia a desinformação e garante precisão.
+      </p>
+
+      <h3>Resultados</h3>
+      <!-- Lista 2, Ex. 2: lista não ordenada -->
+      <ul>
+        <li>Alucinações eliminadas, porque a geração fica restrita a fontes verificadas.</li>
+        <li>Acesso a tutoria confiável para estudantes de todos os contextos.</li>
+        <li>Apoio ao crescimento da comunidade para mais de 30 mil seguidores.</li>
+      </ul>
+
+      <h3>Principal aprendizado</h3>
+      <p>
+        Em IA educacional, <strong>precisão é a métrica principal</strong>.
+        Restrições fortes de RAG são essenciais para combater desinformação e ganhar a confiança dos estudantes.
+      </p>
+
+      <p>Tecnologias: Python, arquitetura RAG, ancoragem em fontes, interface de chatbot.</p>
+    </article>
+
+    <article class="cartao projeto" id="elos">
+      <p class="rotulo">Educação · Impacto social</p>
+      <h2>Iniciativa Elos Code</h2>
+      <p class="status">Diminuindo a diferença de gênero na tecnologia com IA</p>
+
+      <figure>
+        <img src="imagens/projetos/elos-code.jpg" alt="Notebook com código aberto sobre uma mesa de madeira, com cadernos e café" width="768" height="512">
+        <figcaption>
+          <a href="imagens/projetos/elos-code.jpg">Abrir a imagem do Elos Code em tamanho real</a>
+        </figcaption>
+      </figure>
+
+      <p>
+        Um programa universitário que usa o desenvolvimento assistido por IA como principal ferramenta de ensino.
+        Estudantes sem experiência anterior conseguem construir aplicações que funcionam.
+      </p>
+
+      <h3>O problema</h3>
+      <p>
+        Mulheres são <strong>menos de 20%</strong> das formadas em Computação no Brasil.
+        Estudantes de contextos vulneráveis encontram barreiras altas nos cursos tradicionais de programação.
+      </p>
+
+      <h3>Abordagem</h3>
+      <p>
+        Desenhei um programa de extensão que usa ferramentas de IA conversacional para ensinar.
+        As alunas passam pela barreira da sintaxe, constroem aplicações reais e aprendem os fundamentos da Computação ao mesmo tempo.
+      </p>
+
+      <h3>Resultados</h3>
+      <ul>
+        <li>Rede de mentoria entre Brasil, Moçambique e Canadá.</li>
+        <li>Currículo que junta inglês, preparação para o ENEM e habilidades em tecnologia.</li>
+        <li>Programa piloto para preparar meninas do ensino médio para cursos de Computação.</li>
+      </ul>
+
+      <h3>Principal aprendizado</h3>
+      <p>
+        Ferramentas de IA reduzem a barreira de entrada. O foco sai da decoreba de sintaxe e vai para a <em>lógica</em> de resolver problemas.
+      </p>
+
+      <!-- Lista 2, Ex. 9 (Links 3): texto do link que descreve o destino, em vez de "clique aqui" -->
+      <p><a href="elos-code.html">Conheça a jornada de aprendizado do Elos Code</a></p>
+    </article>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>© <span id="ano">2026</span> Júlia Rocha. Vamos construir algo significativo.</p>
+      <p>
+        <a href="extras/glossario.html">Glossário</a> ·
+        <a href="exercicios.html">Roteiro dos exercícios</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
